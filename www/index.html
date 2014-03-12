@@ -29,6 +29,7 @@
             $("#afui").removeClass("ios");
     });
 </script>
+<script src="js/app.js"></script>
 
 <link href="css/icons.css" rel="stylesheet" type="text/css">
 <link href="css/af.ui.css" rel="stylesheet" type="text/css">
@@ -37,7 +38,7 @@
 <div id="afui" class="ios">
     <div id="header"></div>
     <div id="content" style="">
-        <div class="panel" title="Main" data-nav="nav_0" id="main" selected="selected"
+        <div class="panel" title="Berat Ideal" data-nav="nav_0" id="main" selected="selected"
         style="" data-appbuilder-object="page">
 
             <div class="text_item" data-appbuilder-object="text">
@@ -51,7 +52,7 @@
             </p>
         </div>
 
-        <div class="panel" title="New Page" data-nav="nav_0" id="kalkulator" data-appbuilder-object="page"
+        <div class="panel" title="Hitung" data-nav="nav_0" id="kalkulator" data-appbuilder-object="page"
         style="">
 
 
@@ -61,18 +62,18 @@
             <br>
             <br>
             <div class="input_element form_element" style="width:100%;overflow:hidden" data-appbuilder-object="input">
-                <label for="tinggi">
-                    <p align="left">Tinggi</p>
+                <label for="heightInput">
+                    <p align="left">Tinggi (cm)</p>
                 </label>
-                <input type="text" style="float:left;width:40%" id="" placeholder="cm">
+                <input type="number" style="float:left;width:40%" id="heightInput" value="150" required>
             </div>
             <a class="button" href="#" style="" data-appbuilder-object="button" data-transition="slide"
-            id="">Hitung</a>
+            id="calcBtn">Hitung</a>
             <div class="input_element form_element" style="width:100%;overflow:hidden" data-appbuilder-object="input">
-                <label for="beratideal">
-                    <p align="left">Berat Ideal</p>
+                <label for="idealWeightBox">
+                    <p align="left">Berat Ideal (kg)</p>
                 </label>
-                <input type="text" style="float:left;width:40%" id="" placeholder="">
+                <input type="text" style="float:left;width:40%" id="idealWeightBox" readonly>
             </div>
         </div>
     </div>
